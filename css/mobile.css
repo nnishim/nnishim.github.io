@@ -1,0 +1,182 @@
+@media screen and (min-width: 768px) {
+  .logo {
+    display: block;
+  }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar {
+    text-align: unset;
+    margin: 0;
+  }
+  .banner {
+    margin-top: 9.6875rem;
+  }
+  .banner__under-title {
+    display: none;
+  }
+  .banner__title {
+    margin-bottom: 1.875rem;
+    font-size: 3.25rem;
+    line-height: 3.9375rem;
+  }
+  .banner__text {
+    margin-bottom: 1.875rem;
+    font-size: 1.5rem;
+  }
+  .card {
+    min-height: 25rem;
+  }
+  .card__step {
+    margin-top: 12.5rem;
+  }
+  .partner__title {
+    margin-bottom: 2.1875rem;
+  }
+  .holiday__content {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .holiday__img {
+    height: 310px;
+  }
+  .holiday__item:nth-child(5) {
+    grid-column: span 2;
+  }
+  .holiday__item:nth-child(6) {
+    grid-column: span 2;
+  }
+  .interests {
+    display: block;
+    margin-bottom: 6.25rem;
+  }
+  .interests__content {
+    text-align: center;
+  }
+  .interests__title {
+    font-weight: bold;
+    font-size: 1.375rem;
+    line-height: 1.6875rem;
+    color: #444444;
+    margin-bottom: 2.5rem;
+  }
+  .interests__sub-title {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 0.875rem;
+    color: #666666;
+    margin-bottom: 1.5625rem;
+  }
+  .interests__input {
+    padding: 0.75rem 0.875rem;
+    min-width: 18.75rem;
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+  }
+  .interests__input::-webkit-input-placeholder {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #999999;
+  }
+  .interests__input:-ms-input-placeholder {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #999999;
+  }
+  .interests__input::-ms-input-placeholder {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #999999;
+  }
+  .interests__input::placeholder {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #999999;
+  }
+  .interests__button {
+    padding: 0.75rem 1.875rem;
+    background-color: #FF4E50;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
+    margin-left: 0.625rem;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #FF4E50;
+  }
+  .interests__button:hover {
+    background-color: unset;
+    color: #FF4E50;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    display: block;
+    position: relative;
+    border-top: 2px solid #FF4E50;
+    padding-top: 2.1875rem;
+    width: 100%;
+  }
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__item {
+    margin-bottom: 0.6875rem;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    color: #999999;
+  }
+  .footer__company {
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: #444444;
+    margin-bottom: 0.9375rem;
+  }
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo--red {
+    color: #FF4E50;
+    display: block;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

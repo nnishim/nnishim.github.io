@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,*::before,*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 1.25rem 1.25rem;
+}
+
+.header{
+	width: 100%;
+	min-height: 100vh;
+	background:
+		linear-gradient(360deg, #ff4e5125 0%, #f9d5234f 100%),
+		url(../img/header_bg.jpg) center center / cover;
+}
+
+.logo{
+	display: none;
+	font-weight: bold;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	color: #FFFFFF;
+}
+
+.navbar{
+	text-align: center;
+	margin-bottom: 5.625rem;
+}
+
+.nav__btn{
+	padding: 0.625rem 1.25rem;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	color: #FFFFFF;
+	transition: .4s ease-in-out;
+}
+
+.nav__btn--rectangle{
+	border-radius: 2.5rem;
+	border: 2px solid #fff;
+	&:hover{
+		background-color: #fff;
+		color: #FF4E50;
+	}
+}
+
+.banner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	&__under-title{
+		font-weight: bold;
+		font-size: 1.25rem;
+		line-height: 1.5rem;
+		color: #FFFFFF;
+		margin-bottom: 1.5625rem;
+	}
+	&__title{
+		font-weight: bold;
+		font-size: 1.875rem;
+		line-height: 2.3125rem;
+		color: #FFFFFF;
+		max-width: 29.375rem;
+		margin-bottom: 0.3125rem;
+	}
+	&__text{
+		font-family: Roboto;
+		font-weight: 300;
+		font-size: 1.125rem;
+		line-height: 1.5rem;
+		color: #F7F3F2;
+		margin-bottom: 0.9375rem;
+	}
+	&__btn{
+		display: inline-block;
+		padding: 0.75rem 2.875rem;
+		font-weight: bold;
+		font-size: 0.875rem;
+		line-height: 1.0625rem;
+		color: #FFFFFF;
+		background-color: #FF4E50;
+		border: 1px solid #FF4E50;
+		border-radius: 40px;
+		transition: .4s ease-in-out;
+		&:hover{
+			background-color: unset;
+			color: #FF4E50;
+		}
+	}
+}
+
+.cards__content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+	gap: 0.625rem 1.25rem;
+}
+
+.cards__title{
+	min-width: 18.0625rem;
+	font-weight: bold;
+	font-size: 1.375rem;
+	line-height: 1.6875rem;
+	color: #444444;
+}
+
+.card{
+	width: 100%;
+	min-height: 240px;
+	padding: 0 1.25rem;
+	background: 
+		linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%),
+		url(../img/bg_card.jpg) center center / cover;
+	&__step{
+		display: inline-block;
+		padding: 0.25rem 0.875rem;
+		background-color: #FF4E50;
+		border-radius: 40px;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+		letter-spacing: 2px;
+		color: #FFFFFF;
+		margin-top: 3.75rem;
+		margin-bottom: 0.9375rem;
+	}
+	&__title{
+		font-weight: bold;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+		color: #FFFFFF;
+		margin-bottom: 0.625rem;
+		max-width: 12.25rem;
+	}
+	&__text{
+		font-family: Roboto;
+		font-weight: 300;
+		font-size: 0.875rem;
+		line-height: 1rem;
+		color: #E3E3E3;
+		max-width: 16.5rem;
+	}
+}
+
+.card__bg--road{
+	background: 
+		linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%),
+		url(../img/bg_card02.jpg) center center / cover;
+}
+.card__bg--beach{
+	background: 
+		linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%),
+		url(../img/bg_card03.jpg) center center / cover;
+}
+
+.partners{
+	margin-bottom: 2.1875rem;
+}
+
+
+.partner{
+	text-align: center;
+	&__content{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+		gap: 3.125rem 1.25rem;
+	}
+	&__title{
+		font-weight: bold;
+		font-size: 1.375rem;
+		line-height: 1.6875rem;
+		color: #444444;
+		margin-bottom: 0.9375rem;
+		text-align: center;
+	}
+	&__img{
+		margin-bottom: 1.0625rem;
+	}
+	&__name{
+		font-weight: bold;
+		font-size: 0.875rem;
+		line-height: 1.0625rem;
+		color: #444444;
+		margin-bottom: 0.625rem;
+	}
+	&__hobbie{
+		font-family: Roboto;
+		font-weight: 300;
+		font-size: 0.875rem;
+		line-height: 0.875rem;
+		color: #666666;
+		margin-bottom: 2.5rem;
+	}
+	&__button{
+		text-align: center;
+	}
+	&__btn{
+		padding: 0.75rem 0;
+		min-width: 17.5rem;
+		text-align: center;
+		font-weight: bold;
+		font-size: 0.875rem;
+		line-height: 1.0625rem;
+		color: #FF4E50;
+		border: 2px solid #FF4E50;
+		border-radius: 40px;
+		transition: .4s ease-in-out;
+		&:hover{
+			background-color: #FF4E50;
+			color: #fff;
+		}
+	}
+}
+
+.holiday{
+	&__content{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2.625rem 1.25rem;
+	}
+	&__title{
+		text-align: center;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 27px;
+		color: #444444;
+		margin-bottom: 1.875rem;
+	}
+	&__item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+	}
+	&__img{
+		width: 100%;
+		height: 120px;
+		object-fit: cover;	
+		filter: brightness(50%);
+	}
+	&__name{
+		position: absolute;
+		z-index: 50;
+		font-weight: bold;
+		font-size: 1.375rem;
+		line-height: 1.6875rem;
+		color: #FFFFFF;
+		max-width: 12.875rem;
+	}
+}
+
+.interests{
+	display: none;
+}
+
+.footer{
+	display: none;
+}
